@@ -66,12 +66,7 @@ a, a:link, a:visited {
   background: var(--main-color);
 }
 .menu-opener:active:not(.menu-opener-active) {
-  background: var(--main-color);
-}
-.menu-opener:active:not(.menu-opener-active) .menu-button-hamburger,
-.menu-opener:active:not(.menu-opener-active) .menu-button-hamburger::after,
-.menu-opener:active:not(.menu-opener-active) .menu-button-hamburger::before {
-  background: var(--main-bg-color);
+  background: #bbb;
 }
 
 .menu-opener.menu-opener-active:active {

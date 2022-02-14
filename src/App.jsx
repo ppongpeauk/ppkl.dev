@@ -27,15 +27,13 @@ function App() {
 
   return (
     <Router>
-      <Loading active={isLoading} />
-      {!isLoading && (
-        <div className="eve" data-theme={theme}>
-          <Helmet titleTemplate='EVE / %s' defaultTitle='EVE' />
-          <Nav />
-          {/* <SocialBar /> */}
-          <Home />
-        </div>)
-      }
+      <div className="eve" data-theme={theme}>
+        <Loading active={isLoading} />
+        <Helmet titleTemplate='EVE / %s' defaultTitle='EVE' />
+        <Nav />
+        {/* <SocialBar /> */}
+        <Home />
+      </div>
     </Router>
   )
 }

@@ -22,6 +22,26 @@ export default function Home() {
           <img className="home-mugshot" src={figure1} width="100%"></img>
         </div>
       </section>
+      <section className="section-projects">
+        <div style={{ maxWidth: "25%", padding: "2rem" }}>
+          <div>
+            <h1 style={{ fontSize: "48px", fontWeight: "bold" }}>Projects</h1>
+            <p>Here are all of the projects that I've worked on!</p>
+          </div>
+        </div>
+        <div className="project-card-list" style={{ maxWidth: "512px", padding: "2rem" }}>
+          <div className="project-card">
+            <div className="project-card-image">
+              <img src="https://via.placeholder.com/192x192" alt="placeholder" />
+            </div>
+          </div>
+          <div className="project-card">
+            <div className="project-card-image">
+              <img src="https://via.placeholder.com/192x192" alt="placeholder" />
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
