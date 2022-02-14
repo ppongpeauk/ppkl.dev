@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet'
-import figure1 from './figure3.png'
+import mugshot from './front-mugshot.png'
 import './Home.css'
 export default function Home() {
   return (
@@ -19,10 +19,10 @@ export default function Home() {
           </div>
         </div>
         <div style={{ maxWidth: "384px", padding: "2rem" }}>
-          <img className="home-mugshot" src={figure1} width="100%"></img>
+          <img className="home-mugshot" src={mugshot} width="100%"></img>
         </div>
       </section>
-      <section className="section-projects">
+      {/* <section className="section-projects">
         <div style={{ maxWidth: "25%", padding: "2rem" }}>
           <div>
             <h1 style={{ fontSize: "48px", fontWeight: "bold" }}>Projects</h1>
@@ -41,7 +41,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   )
 }
