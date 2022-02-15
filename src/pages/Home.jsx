@@ -19,7 +19,7 @@ export default function Home() {
           </div>
         </div>
         <div style={{ maxWidth: "384px", padding: "2rem" }}>
-          <img className="home-mugshot" src={mugshot} width="100%"></img>
+          <img className="home-mugshot" src={mugshot} width="100%" height="100%"></img>
         </div>
       </section>
       {/* <section className="section-projects">

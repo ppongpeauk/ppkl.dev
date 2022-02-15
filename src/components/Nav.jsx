@@ -31,8 +31,8 @@ export default function Nav() {
                   }
                 }
               >
-                <img src={logo} alt="eve logo" height={64} style={{ marginRight: "1rem" }} />
-                {/* <span className="nav-logo" style={{ fontSize: "2rem", fontWeight: 700 }}>EVE HOLLOWAY</span> */}
+                <img src={logo} alt="eve logo" height="64px" width="auto" style={{ marginRight: "1rem" }} />
+                {/* <span className="nav-logo" style={{ fontSize: "2rem", fontWeight: 700 }}>Pete Pongpeauk</span> */}
               </Link>
             </div>
           </div>
