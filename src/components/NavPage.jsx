@@ -26,7 +26,7 @@ export default function NavPage(props) {
     <div className={"navigator-page" + (!props.visible ? " not-visible" : "")}>
       {/* site navigation links */}
       <NavigatorLink link="/home" content="Home" navToggler={props.navToggler} />
-      <NavigatorLink link="/work" content="Work" navToggler={props.navToggler} />
+      <NavigatorLink link="/projects" content="Work" navToggler={props.navToggler} />
       <NavigatorLink link="/resume.pdf" content="Resume" navToggler={props.navToggler} />
       {/* social media links */}
       <div>
