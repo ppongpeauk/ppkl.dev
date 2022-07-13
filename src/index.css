@@ -1,3 +1,4 @@
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,7 +20,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
   color: var(--main-color);
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -46,18 +47,24 @@ table {
 body {
   margin: 0 !important;
   padding: 0 !important;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
-  font-family: "Crete Round";
+  font-family: "Poppins";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
+  font-family: 'Space Grotesk';
+  src: url('../assets/fonts/Space Grotesk/SpaceGrotesk.woff2') format('woff2'),
+      url('../assets/fonts/Space Grotesk/SpaceGrotesk.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Crete Round';
-  src: url('asset/font/CreteRound-Regular.woff2') format('woff2'),
-      url('asset/font/CreteRound-Regular.woff') format('woff');
+  src: url('assets/font/CreteRound-Regular.woff2') format('woff2'),
+      url('assets/font/CreteRound-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -95,9 +102,9 @@ p {
   font-size: 2rem;
 }
 
-.eve, .eve * {
+/* .eve, .eve * {
   transition: background-color 0.25s ease-out;
-}
+} */
 .eve[data-theme="dark"] {
   --main-bg-color: #101010;
   --main-color: #fff;

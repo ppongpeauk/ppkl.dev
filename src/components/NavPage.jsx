@@ -25,14 +25,14 @@ export default function NavPage(props) {
   return (
     <div className={"navigator-page" + (!props.visible ? " not-visible" : "")}>
       {/* site navigation links */}
-      <NavigatorLink link="/about" content="About" navToggler={props.navToggler} />
+      <NavigatorLink link="/home" content="Home" navToggler={props.navToggler} />
       <NavigatorLink link="/work" content="Work" navToggler={props.navToggler} />
-      <NavigatorLink link="/skills" content="Skills" navToggler={props.navToggler} />
+      <NavigatorLink link="/resume.pdf" content="Resume" navToggler={props.navToggler} />
       {/* social media links */}
       <div>
         <div className="navigator-item-icon">
-          <a className="nav-link-icon" href="https://www.linkedin.com/in/petepongpeauk/" target="_blank" rel="noreferrer" alt="LinkedIn"><LinkedIn sx={{ fontSize: 48 }} /></a>
-          <a className="nav-link-icon" href="https://github.com/restrafes" target="_blank" rel="noreferrer"alt="GitHub"><GitHub sx={{ fontSize: 48 }} /></a>
+          <a className="nav-link-icon" href="https://www.linkedin.com/in/pete-pongpeauk/" target="_blank" rel="noreferrer" alt="LinkedIn"><LinkedIn sx={{ fontSize: 48 }} /></a>
+          <a className="nav-link-icon" href="https://github.com/ppongpeauk" target="_blank" rel="noreferrer"alt="GitHub"><GitHub sx={{ fontSize: 48 }} /></a>
           <a className="nav-link-icon" href="mailto:kurtsiberg@gmail.com" target="_blank" rel="noreferrer"alt="Email"><Email sx={{ fontSize: 48 }} /></a>
         </div>
       </div>

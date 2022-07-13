@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react'
+import { useState, useEffect, useContext, useRef } from 'react'
 import {
   BrowserRouter as Router,
   Route,
@@ -7,32 +7,52 @@ import {
 } from 'react-router-dom';
 
 import { ThemeContext } from './contexts/ThemeContext';
+import { NavContext } from './contexts/NavContext';
+import { LoadContext } from './contexts/LoadContext';
+
 import { Helmet } from 'react-helmet';
 
 import './App.css'
 import Home from './pages/Home'
-import Projects from './pages/Projects'
+import Project from './pages/Project'
+import ProjectList from './pages/ProjectList'
+import NotFound from './pages/NotFound'
 
 import Loading from './components/Loading';
-import Nav from './components/Nav'
-import SocialBar from './components/SocialBar'
+import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true)
+  const { isLoading, setLoading } = useContext(LoadContext) || { isLoading: true };
   const { theme, setTheme } = useContext(ThemeContext) || { theme: 'light' };
+  const { navBackground, setNavBackground } = useContext(NavContext) || { navBackground: false };
 
   useEffect(() => {
-    setIsLoading(false)
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => {
+      setLoading(false);
+      document.body.style.overflow = 'unset';
+    })
   }, [])
 
   return (
     <Router>
-      <div className="eve" data-theme={theme}>
+      <div className="eve" data-theme={theme} >
         <Loading active={isLoading} />
-        <Helmet titleTemplate='EVE / %s' defaultTitle='EVE' />
+        <Helmet titleTemplate='pete pongpeauk / %s' defaultTitle='EVE' />
         <Nav />
         {/* <SocialBar /> */}
-        <Home />
+        {
+          isLoading ? null : <>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/projects' element={<ProjectList />} />
+              <Route path='/projects/:projectName' element={<Project />} />
+              <Route path='*' element={<NotFound/>}/>
+            </Routes>
+          </>
+        }
+        <Footer />
       </div>
     </Router>
   )

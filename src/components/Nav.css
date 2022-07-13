@@ -1,4 +1,4 @@
-.nav {
+/* .nav {
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -41,7 +41,7 @@
 a, a:link, a:visited {
   color: inherit;
   text-decoration: none;
-}
+} */
 
 .menu-opener-wrapper {
   background: none;
@@ -150,7 +150,7 @@ a, a:link, a:visited {
   width: 100vw;
   height: 100vh;
   background: var(--main-bg-color);
-  z-index: 512;
+  z-index: 40;
   top: 0;
   left: 0;
   right: 0;
