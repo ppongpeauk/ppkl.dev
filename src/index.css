@@ -47,7 +47,7 @@ table {
 body {
   margin: 0 !important;
   padding: 0 !important;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
