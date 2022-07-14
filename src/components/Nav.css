@@ -57,16 +57,16 @@ a, a:link, a:visited {
   width: 78px;
   height: 78px;
   border-radius: 50%;
-  border: 3px solid var(--main-color);
+  border: 3px solid rgba(255, 255, 255, 1);
   background: rgba(255, 255, 255, 0);
   z-index: 1000;
   transition: all 0.25s ease-out;
 }
 .menu-opener-active {
-  background: var(--main-color);
+  background: #000;
 }
 .menu-opener:active:not(.menu-opener-active) {
-  background: #bbb;
+  background: #666;
 }
 
 .menu-opener.menu-opener-active:active {
@@ -79,7 +79,7 @@ a, a:link, a:visited {
   left: 0;
   width: 50%;
   height: 3px;
-  background: var(--main-color);
+  background: rgba(255, 255, 255, 1);
   z-index: 1000;
   transition: all 0.25s ease-out;
 }
@@ -93,7 +93,7 @@ a, a:link, a:visited {
   right: 0;
   width: 100%;
   height: 3px;
-  background: var(--main-color);
+  background: rgba(255, 255, 255, 1);
   z-index: 1000;
   transition: all 0.25s ease-out;
 }

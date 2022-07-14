@@ -5,3 +5,7 @@
   width: 100vw;
   height: 100vh;
 } */
+
+html, body, section {
+  background-color: #fff;
+}

@@ -8,10 +8,11 @@ import { NavContext } from '../contexts/NavContext';
 
 function NavbarLink(props) {
   return <>
-    <ul className="md:flex md:flex-row border-2 md:border-none px-3">
-      <Link to={props.link}>
-        <p className="text-2xl text-black transition duration-200 transform md:active:opacity-50 font-semibold mix-blend-difference">
+    <ul className="md:flex md:flex-row border-2 md:border-none px-3 pointer-events-auto">
+      <Link to={props.link} alt={props.name}>
+        <p className="text-2xl text-white transition duration-200 transform hover:text-neutral-300 active:text-neutral-500 font-semibold">
           {props.name}
+          {/* <div className='bg-white h-1 w-10 mt-0.5'></div> */}
         </p>
       </Link>
     </ul>
@@ -28,13 +29,13 @@ export default function Nav() {
   return (
     <>
       <NavPage visible={navPageVisible} navToggler={setNavPageVisible} />
-      <div className={`transition-all duration-300 ease-out flex justify-center w-full mx-auto fixed z-40 ${navBackground ? "h-32" : "h-48"} ${navBackground && 'bg-white'}`}>
+      <div className={`transition-all duration-300 ease-out flex justify-center w-full mx-auto fixed z-40 mix-blend-difference ${navBackground ? "h-32" : "h-48"} ${navBackground ? 'pointer-events-none' : ''}`}>
         <nav className="flex justify-between items-center w-full px-8 lg:px-24 z-50">
-          <div className="nav-logo">
+          <div>
             <div>
               <Link
                 to="/"
-                className="text-3xl text-black font-bold mix-blend-difference transition duration-200 active:opacity-50"
+                className="text-3xl text-white font-bold transition duration-300 hover:text-neutral-300 active:text-neutral-500 pointer-events-auto"
                 onClick={
                   (e) => {
                     // onclick: don't navigate to the link if the nav page is visible, instead make the nav page no longer visible
@@ -48,8 +49,11 @@ export default function Nav() {
                   }
                 }
               >
-                {/* <img src={logo} alt="eve logo" height="64px" width="auto" style={{ marginRight: "1rem" }} /> */}
+                
                 Pete Pongpeauk
+                <div className='bg-white h-1.5 w-[25%] mt-0.5'></div>
+                {/* <img src={logo} alt="eve logo" height="64px" width="auto" style={{ marginRight: "1rem" }} /> */}
+
               </Link>
             </div>
           </div>
@@ -60,11 +64,11 @@ export default function Nav() {
               <NavbarLink name="Work" link="/projects" />
               <NavbarLink name="Resume" link="/resume" />
             </div>
-            <ul className="md:hidden md:flex-row border-2 md:border-none px-4 shrink flex">
+            <li className="md:hidden md:flex-row border-2 md:border-none px-4 shrink flex">
               <Link to="/" className={"menu-opener" + (navPageVisible ? " menu-opener-active" : "")} onClick={(e) => { e.preventDefault(); setNavPageVisible(!navPageVisible); }}>
                 <div className="menu-button-hamburger" />
               </Link>
-            </ul>
+            </li>
           </div>
         </nav>
       </div>

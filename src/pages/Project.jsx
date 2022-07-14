@@ -4,30 +4,35 @@ import { ArrowBackIos } from "@mui/icons-material"
 
 import { Parallax, Background } from "react-parallax";
 import projectPreviewPlaceholder from '../assets/images/project-preview-placeholder.png';
+import { useEffect } from 'react';
 
 export default function Project() {
   let params = useParams();
   const navigate = useNavigate();
 
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'auto'});
+  }, []);
+
   return <>
     <Helmet>
       <title>{params.projectName}</title>
     </Helmet>
-    <div className="py-48">
+    <div>
       {/* <Parallax bgImage={projectPreviewPlaceholder} blur={{ min: -15, max: 15 }} strength={512} className="w-full h-96 object-cover"/> */}
-      <Parallax strength={512} blur={{ min: -15, max: 15 }} className="h-96">
+      <Parallax strength={128} disabled className="h-96">
         <Background className="w-screen h-screen">
-          <img src={projectPreviewPlaceholder} className="w-screen h-screen object-cover" />
+          <img src={projectPreviewPlaceholder} className="w-screen h-screen object-cover banner-gradient" />
         </Background>
       </Parallax>
       <section className="flex flex-col md:flex-row w-full h-auto box-border p-8">
         <div className="w-full sm:w-2/4 p-8">
           <Link to="/" onClick={(e) => { e.preventDefault(); navigate(-1); }}>
-            <ArrowBackIos className="transition-all duration-500 active:opacity-75" sx={{ fontSize: 48 }} />
+            <ArrowBackIos className="transition-all duration-300 hover:text-neutral-500 active:text-neutral-300" sx={{ fontSize: 48 }} />
           </Link>
           {/* name */}
           <div>
-            <h1 className="text-5xl font-bold my-2">
+            <h1 className="text-5xl font-bold pt-2">
               {params.projectName}
             </h1>
             <p className="text-2xl">12-12-2017</p>

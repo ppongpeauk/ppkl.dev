@@ -13,6 +13,7 @@ import { LoadContext } from './contexts/LoadContext';
 import { Helmet } from 'react-helmet';
 
 import './App.css'
+import 'animate.css';
 import Home from './pages/Home'
 import Project from './pages/Project'
 import ProjectList from './pages/ProjectList'
@@ -21,6 +22,7 @@ import NotFound from './pages/NotFound'
 import Loading from './components/Loading';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
+import ReturnToTopButton from './components/ReturnToTopButton';
 
 function App() {
   const { isLoading, setLoading } = useContext(LoadContext) || { isLoading: true };
@@ -39,8 +41,9 @@ function App() {
     <Router>
       <div className="eve" data-theme={theme} >
         <Loading active={isLoading} />
-        <Helmet titleTemplate='pete pongpeauk / %s' defaultTitle='EVE' />
+        <Helmet titleTemplate='%s — Pete Pongpeauk' defaultTitle='EVE' />
         <Nav />
+        <ReturnToTopButton />
         {/* <SocialBar /> */}
         {
           isLoading ? null : <>
@@ -48,7 +51,7 @@ function App() {
               <Route path='/' element={<Home />} />
               <Route path='/projects' element={<ProjectList />} />
               <Route path='/projects/:projectName' element={<Project />} />
-              <Route path='*' element={<NotFound/>}/>
+              <Route path='*' element={<NotFound />} />
             </Routes>
           </>
         }

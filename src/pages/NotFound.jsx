@@ -15,7 +15,7 @@ export default function NotFound() {
           <h1 className="text-5xl font-bold">404 Not Found</h1>
           <div className="bg-black w-10 h-2 mt-2" />
           <p className="text-2xl py-4 pb-8">It seems like you're trying to access a page that either never existed or no longer exists.</p>
-          <Link to="/" className="transition duration-500 border-solid border-[4px] border-black px-6 py-2 active:bg-black active:text-white font-bold text-2xl rounded-full align-middle shrink">
+          <Link to="/" className="transition duration-300 border-solid border-[4px] border-black px-6 py-2 hover:opacity-75 active:opacity-100 active:bg-black active:text-white font-bold text-2xl rounded-full align-middle shrink">
             Take me home, country roads
           </Link>
         </div>
