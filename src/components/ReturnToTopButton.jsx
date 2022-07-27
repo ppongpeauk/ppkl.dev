@@ -5,7 +5,7 @@ export default function ReturnToTopButton() {
   const [scrollY, setScrollY] = useState(0)
 
   useEffect(() => {
-    if (scrollY > 512) {
+    if (scrollY > 256) {
       setVisible(true)
     } else {
       setVisible(false)

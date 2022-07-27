@@ -29,12 +29,12 @@ export default function Nav() {
   return (
     <>
       <NavPage visible={navPageVisible} navToggler={setNavPageVisible} />
-      <div className={`transition-all duration-300 ease-out flex justify-center w-full mx-auto fixed z-40 mix-blend-difference ${navBackground ? "h-32" : "h-48"} ${navBackground ? 'pointer-events-none' : ''}`}>
+      <div className={`transition-all duration-300 ease-out flex justify-center w-full mx-auto fixed z-40 mix-blend-exclusion ${navBackground ? "h-32" : "h-48"} ${navBackground ? 'pointer-events-none' : ''}`}>
         <nav className="flex justify-between items-center w-full px-8 lg:px-24 z-50">
           <div>
             <div>
               <Link
-                to="/"
+                to="/home"
                 className="text-3xl text-white font-bold transition duration-300 hover:text-neutral-300 active:text-neutral-500 pointer-events-auto"
                 onClick={
                   (e) => {
@@ -42,7 +42,7 @@ export default function Nav() {
                     e.preventDefault()
                     if (!navPageVisible) {
                       window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
-                      navigate("/")
+                      navigate("/home")
                     } else {
                       setNavPageVisible(false)
                     }
@@ -51,7 +51,7 @@ export default function Nav() {
               >
                 
                 Pete Pongpeauk
-                <div className='bg-white h-1.5 w-[25%] mt-0.5'></div>
+                {/* <div className='bg-white h-1.5 w-[25%] mt-0.5'></div> */}
                 {/* <img src={logo} alt="eve logo" height="64px" width="auto" style={{ marginRight: "1rem" }} /> */}
 
               </Link>
@@ -60,8 +60,9 @@ export default function Nav() {
 
           <div className="flex-row justify-end items-center">
             <div className="hidden md:flex">
-              <NavbarLink name="Home" link="/" />
-              <NavbarLink name="Work" link="/projects" />
+              <NavbarLink name="Home" link="/home" />
+              <NavbarLink name="Projects" link="/projects" />
+              <NavbarLink name="Experience" link="/experience" />
               <NavbarLink name="Resume" link="/resume" />
             </div>
             <li className="md:hidden md:flex-row border-2 md:border-none px-4 shrink flex">

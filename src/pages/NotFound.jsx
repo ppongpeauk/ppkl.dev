@@ -1,13 +1,21 @@
+import { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import { LoadContext } from '../contexts/LoadContext';
 
 import ProjectCard from "../components/ProjectCard";
 import projectPreviewPlaceholder from '../assets/images/project-preview-placeholder.png';
 
 export default function NotFound() {
+  const [ loading, setLoading ] = useContext(LoadContext);
+  
+  useEffect(() => {
+    setLoading(false);
+  }, []);
+
   return <>
     <Helmet>
-      <title>projects</title>
+      <title>Not Found</title>
     </Helmet>
     <div>
       <section className="w-full min-h-screen box-border pt-48 px-48 flex flex-col items-center align-middle">

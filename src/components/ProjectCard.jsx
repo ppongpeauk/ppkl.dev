@@ -1,13 +1,12 @@
 import { Link } from 'react-router-dom'
-import WOW from 'wowjs';
 
 export default function ProjectCard(props) {
   return <>
     <div className="p-4 w-full xl:w-1/4 lg:w-1/2">
       <Link to={props.link}>
         <div className="transition duration-300 shadow-lg box-border rounded-3xl hover:scale-[101%] hover:shadow-2xl overflow-hidden h-full active:bg-neutral-300">
-          <div className="w-full">
-            <img className="block w-full" src={props.img} alt="Logo" />
+          <div className="">
+            <img className="block w-full h-[384px] object-cover" src={props.img} height="100" alt="Logo" />
           </div>
           <div className="px-8 py-4"> {/* card info */}
             <p className="text-sm font-semibold">{props.type.toUpperCase()}</p>

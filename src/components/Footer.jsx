@@ -4,7 +4,7 @@ export default function Footer() {
   return <>
     <section className="w-full">
       <footer>
-        <div className="flex flex-col justify-center items-center bg-neutral-100 w-100 h-36 box-border p-8">
+        <div className="flex flex-col justify-center items-center bg-neutral-100 w-100 h-32 box-border p-8">
           <div className="footer-content flex flex-row justify-center align-middle w-full p-2">
             <ul className="flex flex-row">
               <li>
@@ -19,7 +19,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="w-full p-2">
-            <p className="text-lg text-black text-center">Made with ♡ by eve.</p>
+            <p className="text-lg text-black text-center">Made with ♡ by EVE.</p>
           </div>
         </div>
       </footer>
