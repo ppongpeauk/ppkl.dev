@@ -54,6 +54,7 @@ function App() {
             path="/"
             element={<Navigate to="/home" replace />}
           />
+          {/* 404 Not Found Page */}
           <Route path='*' element={<NotFound />} />
         </Routes>
         <Footer />

@@ -63,7 +63,7 @@ export default function Nav() {
               <NavbarLink name="Home" link="/home" />
               <NavbarLink name="Projects" link="/projects" />
               <NavbarLink name="Experience" link="/experience" />
-              <NavbarLink name="Resume" link="/resume" />
+              <NavbarLink name="Resume" target="_blank" link="/resume.pdf" download />
             </div>
             <li className="md:hidden md:flex-row border-2 md:border-none px-4 shrink flex">
               <Link to="/" className={"menu-opener" + (navPageVisible ? " menu-opener-active" : "")} onClick={(e) => { e.preventDefault(); setNavPageVisible(!navPageVisible); }}>
