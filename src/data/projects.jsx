@@ -1,15 +1,13 @@
 export const projectData = {
-  "eveedu": {
-    "name": "eveedu",
-    "date": "August 2020",
+  "eveentual": {
+    "name": "EVE-ENT-UAL",
+    "date": "August 2022",
     "type": "Development",
-    "briefDescription": "Automation tool that makes distanced-learning easier",
+    "briefDescription": "A simple RSVP web-app built using Vite and Firebase.",
     "description": [
       `
-      During the start coronavirus pandemic, I decided to work on a project weeks before my junior year of high school that would help students like myself.
-      Like many others during that point in time, school was held virtually over Microsoft Teams. That gave me the idea of automating the process of distanced-learning.
-      `,
-      `i will write more later`
+      EVE-ENT-UAL is a simple web-app that allows users to create and RSVP events.
+      `
     ],
     "media": {
       "banner": "https://cdn.discordapp.com/attachments/813308393208414219/964268593976066048/IMG_2903.JPG",
