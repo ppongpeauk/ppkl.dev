@@ -10,8 +10,8 @@ export default function Navbar(props: any) {
         </Link>
       </div>
       <div className={styles.links}>
-        <Link href="/" className={styles.navbarLink}>about</Link>
-        <Link href="/" className={styles.navbarLink}>work</Link>
+        <Link href="#" className={`${styles.navbarLink} ${styles.navbarLinkAbout}`} id="about-button">About</Link>
+        <Link href="#" className={`${styles.navbarLink} ${styles.navbarLinkResume}`} id="resume-button">Resume</Link>
       </div>
     </nav>
   )

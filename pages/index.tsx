@@ -9,14 +9,18 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Pete Pongpeauk</title>
-        <meta name="description" content="Pete Pongpeauk" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Navbar />
+      {/* <Navbar /> */}
       <main className={styles.main}>
+        <p>coming soon</p>
+        {/* <section className={styles.hero}>
+          <div className={styles.heroText}>
+            <h1 className={styles.heroTitle}>Pete Pongpeauk</h1>
+            <h3 className={styles.heroSubtitle}>computer science</h3>
+          </div>
+        </section> */}
+        {/* <footer className={styles.footer}>
+
+        </footer> */}
       </main>
     </>
   )
