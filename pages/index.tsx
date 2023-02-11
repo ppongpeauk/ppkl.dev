@@ -27,11 +27,12 @@ export default function Home() {
               <div className={styles.heroInnerRow}>
                 <a href="https://github.com/ppongpeauk" target="_blank" rel="noreferrer" className={styles.homeLink}>GitHub</a>
                 <a href="https://www.linkedin.com/in/pete-pongpeauk/" target="_blank" rel="noreferrer" className={styles.homeLink}>LinkedIn</a>
+                <a href="mailto:ppongpeauk@gmail.com" target="_blank" rel="noreferrer" className={styles.homeLink}>Email</a>
                 <a href="resume.pdf" target="_blank" rel="noreferrer" className={styles.homeLink}>Résumé</a>
               </div>
             </div>
             <div>
-              <Image className={styles.heroImage} src="/images/hero.png" alt="Hero" width={256} height={256} />
+              <Image className={styles.heroImage} src="/images/hero.png" alt="Hero" width={256} height={256} priority />
             </div>
           </div>
         </section>
