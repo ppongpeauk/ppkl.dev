@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Pete Pongpeauk</title>
+      </Head>
       {/* <Navbar /> */}
       <main className={styles.main}>
         <section className={styles.mainSection}>
@@ -22,9 +25,9 @@ export default function Home() {
               </div>
               {/* links */}
               <div className={styles.heroInnerRow}>
-                <a href="https://github.com/ppongpeauk" target="_blank" className={styles.homeLink}>GitHub</a>
-                <a href="https://www.linkedin.com/in/pete-pongpeauk/" target="_blank" className={styles.homeLink}>LinkedIn</a>
-                <a href="resume.pdf" target="_blank" className={styles.homeLink}>Résumé</a>
+                <a href="https://github.com/ppongpeauk" target="_blank" rel="noreferrer" className={styles.homeLink}>GitHub</a>
+                <a href="https://www.linkedin.com/in/pete-pongpeauk/" target="_blank" rel="noreferrer" className={styles.homeLink}>LinkedIn</a>
+                <a href="resume.pdf" target="_blank" rel="noreferrer" className={styles.homeLink}>Résumé</a>
               </div>
             </div>
             <div>

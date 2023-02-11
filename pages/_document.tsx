@@ -4,8 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        {/* default page title */}
-        <title>Pete Pongpeauk</title>
         {/* favicon stays universal across pages */}
         <meta name="description" content="Pete Pongpeauk" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
