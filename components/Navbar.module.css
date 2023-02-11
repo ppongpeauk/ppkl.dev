@@ -2,27 +2,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 48px;
-  background-color: #333;
   color: #fff;
-  width: 100vw;
-  height: 128px;
+  top: 24px;
+  width: 100%;
   position: fixed;
   /* center */
   left: 50%;
   transform: translateX(-50%);
 }
 
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
 @media screen and (min-width: 768px) {
   .navbar {
-    padding: 0.5rem 24px;
     width: 75vw;
   }
 }
@@ -30,9 +34,7 @@
 .navbarLink {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
+  font-size: 1rem;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
 }

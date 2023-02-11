@@ -1,2 +1,2 @@
 # ppkl.dev
-Personal portfolio website, built in React JS.
+Personal portfolio website, built with Next.js.
