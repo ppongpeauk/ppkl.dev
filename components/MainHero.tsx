@@ -30,10 +30,10 @@ export default function MainHero() {
         <p className={styles.heroSubtitle}>Computer Science student at George Mason University <Image className={styles.intextLogo} src={masonLogo} alt="Mason Logo" width={16} height={16}></Image></p>
       </div>
       {/* main page navigation */}
-      <div className={styles.heroInnerRow}>
+      {/* <div className={styles.heroInnerRow}>
         <HomeLink href="/">Work</HomeLink>
         <HomeLink href="/about">About</HomeLink>
-      </div>
+      </div> */}
       {/* links */}
       <div className={styles.heroInnerRow}>
         <a href="https://github.com/ppongpeauk" target="_blank" rel="noreferrer" className={styles.homeLinkExternal}>GitHub</a>
