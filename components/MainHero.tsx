@@ -31,8 +31,9 @@ export default function MainHero() {
       </div>
       {/* main page navigation */}
       {/* <div className={styles.heroInnerRow}>
+        <HomeLink href="/">About</HomeLink>
         <HomeLink href="/">Work</HomeLink>
-        <HomeLink href="/about">About</HomeLink>
+        <HomeLink href="/">Projects</HomeLink>
       </div> */}
       {/* links */}
       <div className={styles.heroInnerRow}>

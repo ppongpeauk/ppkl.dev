@@ -69,6 +69,7 @@
 
 .homeLink, .homeLinkExternal {
   margin-right: 1em;
+  white-space: nowrap; 
 }
 
 .homeLinkActive {

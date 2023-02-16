@@ -1,0 +1,79 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  width: 50%;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .mainSection {
+    margin-top: 15%;
+    width: 75%;
+  }
+}
+
+.mainSectionHeader {
+  width: 100%;
+}
+
+
+.mainSection__title {
+  font-family: "Roboto Mono";
+  font-size: 36px;
+  margin-bottom: 2%;
+}
+
+.mainSection__hr {
+  width: 100%;
+  height: 4px;
+  background-color: #000000;
+}
+
+.mainSection__titleBackIcon:link, .mainSection__titleBackIcon:visited {
+  color: #000;
+}
+
+.mainSection__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.mainSection__listItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 2em;
+  height: 256px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 4px solid #000;
+  text-decoration: none;
+  color: #000;
+}
+
+.mainSection__listItemTitle {
+  font-family: "Roboto Mono";
+  font-size: 2em;
+}
+
+.mainSection__listItemDescription {
+  font-family: "Roboto Mono";
+  font-size: 18px;
+}
