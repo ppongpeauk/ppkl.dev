@@ -63,6 +63,12 @@
   max-width: 50%;
 }
 
+@media screen and (max-width: 768px) {
+  .heroText {
+    max-width: 75%;
+  }
+}
+
 .heroText, .heroImage {
   margin: 1.5em;
 }
