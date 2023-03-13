@@ -1,5 +1,5 @@
 import Image from "next/image"
-import carousel_test_1 from "./carousel_test_1.png"
+import carousel_test_1 from "./carousel_test_1.jpeg"
 import styles from "./Gallery.module.css"
 
 // TODO: fix typechecking for src and alt properties in Image component
