@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Gallery from "../../components/Gallery";
 
 export default function Project() {
   const router = useRouter();
@@ -15,5 +16,7 @@ export default function Project() {
       {(projectData.num < 10) ? 0 : null}{projectData.num} - {projectData.name}
     </h1>
     <p>{projectData.description}</p>
+    <hr/>
+    <Gallery />
   </>
 }
