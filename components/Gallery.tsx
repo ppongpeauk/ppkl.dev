@@ -1,6 +1,6 @@
-import Image from "next/image"
-import carousel_test_1 from "./carousel_test_1.jpeg"
-import styles from "./Gallery.module.css"
+import Image from "next/image";
+import carousel_test_1 from "./carousel_test_1.jpeg";
+import styles from "./Gallery.module.css";
 
 // TODO: fix typechecking for src and alt properties in Image component
 
@@ -11,10 +11,10 @@ export default function Gallery() {
       {
         content: [0, carousel_test_1, "example alt 1"],
         caption: "example caption 1",
-        captionSub: "example subcaption 1"
-      }
-    ]
-  }
+        captionSub: "example subcaption 1",
+      },
+    ] as const,
+  };
   return (
     <>
       <div className="carousel">
@@ -40,5 +40,5 @@ export default function Gallery() {
         </div>
       </div>
     </>
-  )
+  );
 }
