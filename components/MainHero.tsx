@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import heroImage from '../assets/hero-image.png'
+import heroImage from '../assets/hero-image-alt.png'
 import masonLogo from '../assets/mason-logo.png'
 import styles from './MainHero.module.css'
 
