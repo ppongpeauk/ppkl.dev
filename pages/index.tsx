@@ -1,12 +1,17 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
 
-import { useRouter } from 'next/router'
+import { Roboto_Flex } from "next/font/google";
+import { useRouter } from 'next/router';
 
-import styles from '../styles/Home.module.css'
+const font = Roboto_Flex({
+  subsets: ["latin"],
+});
 
-import MainHero from '../components/MainHero'
+import styles from '../styles/Home.module.css';
+
+import MainHero from '../components/MainHero';
 
 export default function Home() {
   return (
@@ -24,7 +29,7 @@ export default function Home() {
         <meta name="application-name" content="Pete Pongpeauk"/>
         <meta name="msapplication-TileColor" content="#da532c"/>
       </Head>
-      <main className={styles.main}>
+      <main className={`${styles.main} ${font.className}`}>
         <section className={styles.mainSection}>
           <MainHero />
         </section>
