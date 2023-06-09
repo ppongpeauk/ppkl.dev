@@ -27,7 +27,7 @@ export default function MainHero() {
     <div className={styles.heroText}>
       <div>
         <h1 className={styles.heroTitle}>Hi, I&apos;m Pete.</h1>
-        <p className={styles.heroSubtitle}>Computer Science student at George Mason University</p>
+        <p className={styles.heroSubtitle}>Full-stack software developer studying at George Mason University.</p>
       </div>
       {/* main page navigation */}
       {/* <div className={styles.heroInnerRow}>
