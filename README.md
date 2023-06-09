@@ -1,3 +1,0 @@
-# ppkl.dev
-
-Personal website
