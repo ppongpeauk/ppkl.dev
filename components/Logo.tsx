@@ -8,10 +8,10 @@ export default function Logo() {
     <Link href="/">
       <Text
         fontSize="lg"
-        fontWeight="bold"
+        fontWeight="bolder"
         color={useColorModeValue("gray.800", "white")}
       >
-        Pete Pongpeauk
+        Pete Pongpeauk.
       </Text>
     </Link>
   )

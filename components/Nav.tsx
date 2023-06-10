@@ -35,22 +35,11 @@ function LinkItem({
       bg={active ? "gray.200" : undefined}
       href={href}
       height="100%"
+      borderRadius={4}
     >
       {children}
     </Link>
   );
-}
-
-function MenuLink({
-  href,
-  ref,
-  ...props
-}: {
-  href: string;
-  ref: any;
-  [key: string]: any;
-}) {
-  return <Link ref={ref} as={NextLink} {...props} />;
 }
 
 export default function Navbar() {
@@ -63,6 +52,43 @@ export default function Navbar() {
       bg={useColorModeValue("white", "gray.800")}
       css={{ backdropFilter: "blur(5px)" }}
       zIndex={128}
-    ></Box>
+    >
+      <Container
+        display="flex"
+        p={2}
+        maxW="container.md"
+        alignItems="center"
+        justifyContent="space-between"
+      >
+        <Flex
+          height={16}
+          alignItems="center"
+          justifyContent="space-between"
+          wrap="wrap"
+        >
+          <Flex align="center" mr={5}>
+            <Heading as="h1" size="lg" letterSpacing={"tight"}>
+              <Logo />
+            </Heading>
+          </Flex>
+        </Flex>
+
+        <Stack
+          direction={{ base: "column", md: "row" }}
+          display={{ base: "none", md: "flex" }}
+          width={{ base: "full", md: "auto" }}
+          alignItems="center"
+          flexGrow={1}
+          mt={{ base: 4, md: 0 }}
+        >
+          <LinkItem href="/work" path={path}>
+            Work
+          </LinkItem>
+          <LinkItem href="/blog" path={path}>
+            Blog
+          </LinkItem>
+        </Stack>
+      </Container>
+    </Box>
   );
 }
