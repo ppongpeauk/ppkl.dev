@@ -1,4 +1,9 @@
+// Next
+import { usePathname } from "next/navigation";
+
+// Components
 import Logo from "@/components/Logo";
+import ThemeButton from "@/components/ThemeButton";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import {
   Box,
@@ -16,7 +21,9 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
-import { usePathname } from "next/navigation";
+
+import { Roboto_Flex } from "next/font/google";
+const font = Roboto_Flex({ subsets: ["latin"] });
 
 function LinkItem({
   href,
@@ -33,6 +40,9 @@ function LinkItem({
       as={NextLink}
       p={2}
       bg={active ? "gray.200" : undefined}
+      color={
+        useColorModeValue(active ? "black" : "black", active ? "black" : "white")
+      }
       href={href}
       height="100%"
       borderRadius={4}
@@ -49,13 +59,14 @@ export default function Navbar() {
     <Box
       width="100%"
       as="nav"
-      bg={useColorModeValue("white", "gray.800")}
+      // bg={useColorModeValue("white", "gray.800")}
       css={{ backdropFilter: "blur(5px)" }}
       zIndex={128}
+      className={font.className}
     >
       <Container
         display="flex"
-        p={2}
+        paddingTop={2}
         maxW="container.md"
         alignItems="center"
         justifyContent="space-between"
@@ -88,6 +99,7 @@ export default function Navbar() {
             Blog
           </LinkItem>
         </Stack>
+        <ThemeButton/>
       </Container>
     </Box>
   );

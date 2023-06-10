@@ -230,32 +230,6 @@
         "async": false
       }
     },
-    "(app-client)/./app/page.tsx": {
-      "*": {
-        "id": "(sc_client)/./app/page.tsx",
-        "name": "*",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./app/page.tsx",
-        "name": "",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./app/page.tsx",
-        "name": "default",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      }
-    },
     "(app-client)/./app/layout.tsx": {
       "*": {
         "id": "(sc_client)/./app/layout.tsx",
@@ -359,10 +333,40 @@
         ],
         "async": false
       }
+    },
+    "(app-client)/./app/page.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/page.tsx",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/page.tsx",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/page.tsx",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
     }
   },
   "edgeSSRModuleMapping": {},
-  "cssFiles": {},
+  "cssFiles": {
+    "/Users/eve/Documents/Personal Projects/Code/ppkl-dev/app/layout": [
+      "static/css/app/layout.css"
+    ]
+  },
   "clientModules": {
     "/Users/eve/Documents/Personal Projects/Code/ppkl-dev/node_modules/next/dist/client/components/app-router.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
@@ -1036,29 +1040,12 @@
       ],
       "async": false
     },
-    "/Users/eve/Documents/Personal Projects/Code/ppkl-dev/app/page.tsx": {
-      "id": "(app-client)/./app/page.tsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/eve/Documents/Personal Projects/Code/ppkl-dev/app/page.tsx#": {
-      "id": "(app-client)/./app/page.tsx",
-      "name": "",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/eve/Documents/Personal Projects/Code/ppkl-dev/app/page.tsx#default": {
-      "id": "(app-client)/./app/page.tsx",
+    "/Users/eve/Documents/Personal Projects/Code/ppkl-dev/node_modules/next/font/google/target.css?{\"path\":\"components/Nav.tsx\",\"import\":\"Roboto_Flex\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"font\"}#": {
+      "id": "null",
       "name": "default",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
+        "static/css/app/layout.css"
+      ]
     },
     "/Users/eve/Documents/Personal Projects/Code/ppkl-dev/app/layout.tsx": {
       "id": "(app-client)/./app/layout.tsx",
@@ -1177,6 +1164,30 @@
       "name": "default",
       "chunks": [
         "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/eve/Documents/Personal Projects/Code/ppkl-dev/app/page.tsx": {
+      "id": "(app-client)/./app/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/eve/Documents/Personal Projects/Code/ppkl-dev/app/page.tsx#": {
+      "id": "(app-client)/./app/page.tsx",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/eve/Documents/Personal Projects/Code/ppkl-dev/app/page.tsx#default": {
+      "id": "(app-client)/./app/page.tsx",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     }
