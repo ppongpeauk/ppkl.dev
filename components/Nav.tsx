@@ -7,10 +7,10 @@ import ThemeButton from "@/components/ThemeButton";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import {
   Box,
+  Button,
   Container,
   Flex,
   Heading,
-  IconButton,
   Link,
   Menu,
   MenuButton,
@@ -40,9 +40,10 @@ function LinkItem({
       as={NextLink}
       p={2}
       bg={active ? "gray.200" : undefined}
-      color={
-        useColorModeValue(active ? "black" : "black", active ? "black" : "white")
-      }
+      color={useColorModeValue(
+        active ? "black" : "black",
+        active ? "black" : "white"
+      )}
       href={href}
       height="100%"
       borderRadius={4}
@@ -57,6 +58,7 @@ export default function Navbar() {
 
   return (
     <Box
+      position="fixed"
       width="100%"
       as="nav"
       // bg={useColorModeValue("white", "gray.800")}
@@ -66,12 +68,12 @@ export default function Navbar() {
     >
       <Container
         display="flex"
-        paddingTop={2}
+        paddingTop={8}
+        paddingBottom={8}
         maxW="container.md"
         alignItems="center"
         justifyContent="space-between"
       >
-        
         {/* Logo */}
         <Flex
           height={16}
@@ -86,7 +88,7 @@ export default function Navbar() {
           </Flex>
         </Flex>
 
-        <Stack
+        {/* <Stack
           direction={{ base: "column", md: "row" }}
           display={{ base: "none", md: "flex" }}
           width={{ base: "full", md: "auto" }}
@@ -100,8 +102,21 @@ export default function Navbar() {
           <LinkItem href="/blog" path={path}>
             Blog
           </LinkItem>
-        </Stack>
-        <ThemeButton/>
+        </Stack> */}
+        <header>
+          <Link href="/resume.pdf" m={2}>
+            <Button
+              variant="link"
+              p={[1, 4]}
+              fontSize={["md", "sm"]}
+              fontWeight="normal"
+              color={useColorModeValue("gray.800", "white")}
+            >
+              Résumé
+            </Button>
+          </Link>
+          <ThemeButton />
+        </header>
       </Container>
     </Box>
   );

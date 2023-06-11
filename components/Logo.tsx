@@ -14,5 +14,5 @@ export default function Logo() {
         Pete Pongpeauk.
       </Text>
     </Link>
-  )
+  );
 }

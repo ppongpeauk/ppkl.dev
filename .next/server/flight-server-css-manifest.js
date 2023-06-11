@@ -10,6 +10,9 @@ self.__RSC_CSS_MANIFEST={
     ],
     "/Users/eve/Documents/Personal Projects/Code/ppkl-dev/app/work/page": [
       "/Users/eve/Documents/Personal Projects/Code/ppkl-dev/node_modules/next/font/google/target.css?{\"path\":\"components/Nav.tsx\",\"import\":\"Roboto_Flex\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"font\"}"
+    ],
+    "/Users/eve/Documents/Personal Projects/Code/ppkl-dev/app/blog/page": [
+      "/Users/eve/Documents/Personal Projects/Code/ppkl-dev/node_modules/next/font/google/target.css?{\"path\":\"components/Nav.tsx\",\"import\":\"Roboto_Flex\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"font\"}"
     ]
   }
 }
