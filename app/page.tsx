@@ -50,7 +50,7 @@ export default function Page() {
               mb={2}
               variant="section-title"
             >
-              Biography
+              About
             </Heading>
             <Paragraph>
               Pete Pongpeauk is a software developer and designer based in
