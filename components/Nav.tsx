@@ -71,6 +71,8 @@ export default function Navbar() {
         alignItems="center"
         justifyContent="space-between"
       >
+        
+        {/* Logo */}
         <Flex
           height={16}
           alignItems="center"
