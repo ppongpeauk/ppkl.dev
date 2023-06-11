@@ -11,10 +11,9 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+import Head from "next/head";
 import Image from "next/image";
-import {
-  BsSpotify
-} from "react-icons/bs";
+import { BsSpotify } from "react-icons/bs";
 import {
   IoLogoGithub,
   IoLogoInstagram,
@@ -24,98 +23,128 @@ import {
 
 export default function Page() {
   return (
-    <Box maxW="container.sm" margin="auto">
-      <Section delay={0.1}>
-        <Box
-          as="main"
-          pb={8}
-          display="flex"
-          flexDirection="row"
-          justifyContent="center"
-          alignItems="center"
-        >
+    <>
+      <Head>
+        <title>Pete Pongpeauk</title>
+        <meta
+          name="description"
+          content="Pete Pongpeauk is a software developer and designer based in Washington, DC."
+        />
+        <meta property="og:title" content="Pete Pongpeauk" />
+        <meta
+          property="og:description"
+          content="Pete Pongpeauk is a software developer and designer based in Washington, DC."
+        />
+        <meta property="og:url" content="https://ppkl.dev" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/images/profile.png" />
+        <meta property="og:image:alt" content="Pete Pongpeauk" />
+      </Head>
+      <Box maxW="container.sm" margin="auto">
+        <Section delay={0.1}>
           <Box
-            mr="8"
-            borderRadius="100%"
-            overflow="hidden"
-            outline="2px solid"
+            as="main"
+            pb={8}
+            display="flex"
+            flexDirection="row"
+            justifyContent="center"
+            alignItems="center"
           >
-            <Image
-              src="/images/profile-alt.png?"
-              alt="Pete Pongpeauk"
-              width={160}
-              height={160}
-            />
-          </Box>
-          <Box>
-            <Text
-              fontSize="xl"
-              fontWeight="bold"
-              color={useColorModeValue("gray.800", "white")}
+            <Box
+              mr="8"
+              borderRadius="100%"
+              overflow="hidden"
+              outline="2px solid"
             >
-              Pete Pongpeauk
-            </Text>
-            <Text
-              fontSize="md"
-              fontWeight="normal"
-              color={useColorModeValue("gray.800", "white")}
+              <Image
+                src="/images/profile-alt.png?"
+                alt="Pete Pongpeauk"
+                width={160}
+                height={160}
+              />
+            </Box>
+            <Box>
+              <Text
+                fontSize="xl"
+                fontWeight="bold"
+                color={useColorModeValue("gray.800", "white")}
+              >
+                Pete Pongpeauk
+              </Text>
+              <Text
+                fontSize="md"
+                fontWeight="normal"
+                color={useColorModeValue("gray.800", "white")}
+              >
+                (Software Developer / Designer)
+              </Text>
+            </Box>
+          </Box>
+        </Section>
+        <Section delay={0.2}>
+          <Container maxW="container.md">
+            <Heading
+              as="h3"
+              fontSize="2xl"
+              mt={2}
+              mb={2}
+              variant="section-title"
             >
-              (Software Developer / Designer)
-            </Text>
-          </Box>
-        </Box>
-      </Section>
-      <Section delay={0.2}>
-        <Container maxW="container.md">
-          <Heading as="h3" fontSize="2xl" mt={2} mb={2} variant="section-title">
-            Biography
-          </Heading>
-          <Paragraph>
-            Pete Pongpeauk is a software developer and designer based in
-            Washington, DC. He is currently studying Computer Science at George
-            Mason University in Fairfax, Virginia.
-          </Paragraph>
-        </Container>
-      </Section>
-      <Section delay={0.3}>
-        <Container maxW="container.md">
-          <Heading as="h3" fontSize="2xl" mt={2} mb={2} variant="section-title">
-            On the Web
-          </Heading>
-          <Box>
-            <Link href="https://github.com/ppongpeauk" isExternal>
-              <Button mb={2} variant="ghost" leftIcon={<IoLogoGithub />}>
-                GitHub
-              </Button>
-            </Link>
-            <br />
-            <Link href="https://linkedin.com/in/pete-pongpeauk" isExternal>
-              <Button mb={2} variant="ghost" leftIcon={<IoLogoLinkedin />}>
-                LinkedIn
-              </Button>
-            </Link>
-            <br />
-            <Link href="https://twitter.com/restrafes" isExternal>
-              <Button mb={2} variant="ghost" leftIcon={<IoLogoTwitter />}>
-                Twitter
-              </Button>
-            </Link>
-            <br />
-            <Link href="https://instagram.com/pete.pkl" isExternal>
-              <Button mb={2} variant="ghost" leftIcon={<IoLogoInstagram />}>
-                Instagram
-              </Button>
-            </Link>
-            <br />
-            <Link href="https://open.spotify.com/user/pete_xyz" isExternal>
-              <Button mb={2} variant="ghost" leftIcon={<BsSpotify />}>
-                Spotify
-              </Button>
-            </Link>
-            <br />
-          </Box>
-        </Container>
-      </Section>
-    </Box>
+              Biography
+            </Heading>
+            <Paragraph>
+              Pete Pongpeauk is a software developer and designer based in
+              Washington, DC. He is currently studying Computer Science at
+              George Mason University in Fairfax, Virginia.
+            </Paragraph>
+          </Container>
+        </Section>
+        <Section delay={0.3}>
+          <Container maxW="container.md">
+            <Heading
+              as="h3"
+              fontSize="2xl"
+              mt={2}
+              mb={2}
+              variant="section-title"
+            >
+              On the Web
+            </Heading>
+            <Box>
+              <Link href="https://github.com/ppongpeauk" isExternal>
+                <Button mb={2} variant="ghost" leftIcon={<IoLogoGithub />}>
+                  GitHub
+                </Button>
+              </Link>
+              <br />
+              <Link href="https://linkedin.com/in/pete-pongpeauk" isExternal>
+                <Button mb={2} variant="ghost" leftIcon={<IoLogoLinkedin />}>
+                  LinkedIn
+                </Button>
+              </Link>
+              <br />
+              <Link href="https://twitter.com/restrafes" isExternal>
+                <Button mb={2} variant="ghost" leftIcon={<IoLogoTwitter />}>
+                  Twitter
+                </Button>
+              </Link>
+              <br />
+              <Link href="https://instagram.com/pete.pkl" isExternal>
+                <Button mb={2} variant="ghost" leftIcon={<IoLogoInstagram />}>
+                  Instagram
+                </Button>
+              </Link>
+              <br />
+              <Link href="https://open.spotify.com/user/pete_xyz" isExternal>
+                <Button mb={2} variant="ghost" leftIcon={<BsSpotify />}>
+                  Spotify
+                </Button>
+              </Link>
+              <br />
+            </Box>
+          </Container>
+        </Section>
+      </Box>
+    </>
   );
 }

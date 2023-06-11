@@ -12,6 +12,9 @@ import MainLayout from "@/components/layouts/MainLayout";
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <title key="1">Pete Pongpeauk</title>
+      </head>
       <body>
         <Providers>
           <MainLayout>{children}</MainLayout>
