@@ -99,9 +99,6 @@ export default function Navbar() {
           <LinkItem href="/work" path={path}>
             Work
           </LinkItem>
-          <LinkItem href="/blog" path={path}>
-            Blog
-          </LinkItem>
         </Stack> */}
         <header>
           <Link href="/resume.pdf" m={2}>
