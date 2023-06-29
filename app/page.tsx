@@ -46,6 +46,7 @@ export default function Page() {
             <Heading
               as="h3"
               fontSize="2xl"
+              letterSpacing={"tighter"}
               mt={2}
               mb={2}
               variant="section-title"
@@ -53,7 +54,7 @@ export default function Page() {
               About
             </Heading>
             <Paragraph>
-              Pete Pongpeauk is a software developer and designer based in
+              Pete Pongpeauk is a software developer based in
               Washington, DC. He is currently studying Computer Science at
               George Mason University in Fairfax, Virginia.
             </Paragraph>
@@ -64,11 +65,12 @@ export default function Page() {
             <Heading
               as="h3"
               fontSize="2xl"
+              letterSpacing={"tighter"}
               mt={2}
               mb={2}
               variant="section-title"
             >
-              On the Web
+              On The Web
             </Heading>
             <Box>
               <Link href="https://github.com/ppongpeauk" isExternal>
@@ -92,12 +94,6 @@ export default function Page() {
               <Link href="https://instagram.com/pete.pkl" isExternal>
                 <Button mb={2} variant="ghost" leftIcon={<IoLogoInstagram />}>
                   Instagram
-                </Button>
-              </Link>
-              <br />
-              <Link href="https://open.spotify.com/user/pete_xyz" isExternal>
-                <Button mb={2} variant="ghost" leftIcon={<BsSpotify />}>
-                  Spotify
                 </Button>
               </Link>
               <br />

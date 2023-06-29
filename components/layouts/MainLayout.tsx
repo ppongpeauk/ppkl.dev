@@ -33,9 +33,10 @@ export default function MainLayout({
               borderRadius="100%"
               overflow="hidden"
               outline="2px solid"
+              outlineColor={useColorModeValue("gray.200", "gray.700")}
             >
               <Image
-                src="/images/profile-alt.png?"
+                src="/images/profile.png"
                 alt="Pete Pongpeauk"
                 width={160}
                 height={160}
@@ -45,16 +46,16 @@ export default function MainLayout({
               <Text
                 fontSize="xl"
                 fontWeight="bold"
-                color={useColorModeValue("gray.800", "white")}
+                letterSpacing={"tighter"}
               >
                 Pete Pongpeauk
               </Text>
               <Text
                 fontSize="md"
-                fontWeight="normal"
-                color={useColorModeValue("gray.800", "white")}
+                fontWeight="bold"
+                letterSpacing={"tighter"}
               >
-                (Software Developer / Designer)
+                (Software Developer)
               </Text>
             </Box>
           </Box>

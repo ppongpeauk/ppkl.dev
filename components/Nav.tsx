@@ -68,8 +68,7 @@ export default function Navbar() {
     >
       <Container
         display="flex"
-        paddingTop={8}
-        paddingBottom={8}
+        py={8}
         maxW="container.md"
         alignItems="center"
         justifyContent="space-between"
@@ -105,9 +104,13 @@ export default function Navbar() {
             <Button
               variant="link"
               p={[1, 4]}
-              fontSize={["md", "sm"]}
-              fontWeight="normal"
+              fontSize={"md"}
+              fontWeight="bold"
+              letterSpacing={"tighter"}
+              textUnderlineOffset={4}
               color={useColorModeValue("gray.800", "white")}
+              transition={"all 0.2s ease"}
+              _hover={{ color: useColorModeValue("gray.600", "gray.400") }}
             >
               Résumé
             </Button>
