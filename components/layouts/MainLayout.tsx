@@ -46,14 +46,12 @@ export default function MainLayout({
               <Text
                 fontSize="xl"
                 fontWeight="bold"
-                letterSpacing={"tighter"}
               >
                 Pete Pongpeauk
               </Text>
               <Text
                 fontSize="md"
                 fontWeight="bold"
-                letterSpacing={"tighter"}
               >
                 (Software Developer)
               </Text>
