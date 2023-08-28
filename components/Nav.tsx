@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 // Components
 import Logo from "@/components/Logo";
 import ThemeButton from "@/components/ThemeButton";
-import { HamburgerIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
@@ -12,13 +11,8 @@ import {
   Flex,
   Heading,
   Link,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
   Spacer,
-  Stack,
-  useColorModeValue,
+  useColorModeValue
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 
@@ -99,24 +93,23 @@ export default function Navbar() {
             Work
           </LinkItem>
         </Stack> */}
-        <header>
-          <Link href="/resume.pdf" m={2}>
-            <Button
-              variant="link"
-              p={[1, 4]}
-              fontSize={"md"}
-              fontWeight="bold"
-              letterSpacing={"tighter"}
-              textUnderlineOffset={4}
-              color={useColorModeValue("gray.800", "white")}
-              transition={"all 0.2s ease"}
-              _hover={{ color: useColorModeValue("gray.600", "gray.400") }}
-            >
-              Résumé
-            </Button>
-          </Link>
-          <ThemeButton />
-        </header>
+        <Spacer />
+        <Button
+          as={Link}
+          href="/resume.pdf"
+          variant="link"
+          p={[1, 4]}
+          fontSize={"md"}
+          fontWeight="bold"
+          letterSpacing={"tighter"}
+          textUnderlineOffset={4}
+          color={useColorModeValue("gray.800", "white")}
+          transition={"all 0.2s ease"}
+          _hover={{ color: useColorModeValue("gray.600", "gray.400") }}
+        >
+          Résumé
+        </Button>
+        <ThemeButton />
       </Container>
     </Box>
   );

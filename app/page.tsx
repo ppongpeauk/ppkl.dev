@@ -100,7 +100,6 @@ export default function Page() {
                   <Heading
                     as="h3"
                     fontSize="2xl"
-                    letterSpacing={"tighter"}
                     mt={2}
                     mb={2}
                     variant="section-title"
@@ -119,7 +118,6 @@ export default function Page() {
                   <Heading
                     as="h3"
                     fontSize="2xl"
-                    letterSpacing={"tighter"}
                     mt={2}
                     mb={2}
                     variant="section-title"
@@ -128,27 +126,27 @@ export default function Page() {
                   </Heading>
                   <Box gap={4}>
                     <Link href="https://github.com/ppongpeauk" isExternal>
-                      <Button size={"sm"} variant="ghost" leftIcon={<IoLogoGithub />}>
+                      <Button size={"md"} variant="ghost" leftIcon={<IoLogoGithub />}>
                         GitHub
                       </Button>
                     </Link>
                     <Link href="https://linkedin.com/in/pete-pongpeauk" isExternal>
-                      <Button size={"sm"} variant="ghost" leftIcon={<IoLogoLinkedin />}>
+                      <Button size={"md"} variant="ghost" leftIcon={<IoLogoLinkedin />}>
                         LinkedIn
                       </Button>
                     </Link>
                     <Link href="https://twitter.com/restrafes" isExternal>
-                      <Button size={"sm"} variant="ghost" leftIcon={<IoLogoTwitter />}>
+                      <Button size={"md"} variant="ghost" leftIcon={<IoLogoTwitter />}>
                         Twitter
                       </Button>
                     </Link>
                     <Link href="https://instagram.com/pete.pkl" isExternal>
-                      <Button size={"sm"} variant="ghost" leftIcon={<IoLogoInstagram />}>
+                      <Button size={"md"} variant="ghost" leftIcon={<IoLogoInstagram />}>
                         Instagram
                       </Button>
                     </Link>
                     <Link href="/Pete Pongpeauk (2BBF9BAE) – Public.asc" isExternal>
-                      <Button size={"sm"} variant="ghost" leftIcon={<FaKey />}>
+                      <Button size={"md"} variant="ghost" leftIcon={<FaKey />}>
                         Public Key
                       </Button>
                     </Link>

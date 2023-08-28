@@ -3,32 +3,18 @@
 import Section from "@/components/section";
 import {
   Box,
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardHeader,
   Container,
-  Flex,
   Heading,
   Image,
   Link,
-  List,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-  Spacer,
-  Stack,
-  Text,
-  useColorModeValue,
+  Text
 } from "@chakra-ui/react";
 
 function WorkCard({
-  uri="/",
-  title="Work Title",
-  description="Work Description",
-  image="test-thumbnail.jpg",
+  uri = "/",
+  title = "Work Title",
+  description = "Work Description",
+  image = "test-thumbnail.jpg",
 }: {
   uri?: string;
   title?: string;
@@ -80,9 +66,9 @@ function WorkCard({
 export default function Page() {
   return (
     <>
-      <Box maxW="container.sm" margin="auto">
+      <Container maxW="container.sm" margin="auto" p={8}>
         <Section delay={0.1}>
-          <Heading as="h3" fontSize="2xl" mt={2} variant="section-title">
+          <Heading as="h3" fontSize="3xl" mt={2} variant="section-title">
             Work
           </Heading>
           <Box>
@@ -91,7 +77,7 @@ export default function Page() {
             <WorkCard />
           </Box>
         </Section>
-      </Box>
+      </Container>
     </>
   );
 }
