@@ -4,17 +4,16 @@ import { usePathname } from "next/navigation";
 // Components
 import Logo from "@/components/Logo";
 import ThemeButton from "@/components/ThemeButton";
+import { Link } from "@chakra-ui/next-js";
 import {
   Box,
   Button,
   Container,
   Flex,
   Heading,
-  Link,
   Spacer,
   useColorModeValue
 } from "@chakra-ui/react";
-import NextLink from "next/link";
 
 import { Roboto_Flex } from "next/font/google";
 const font = Roboto_Flex({ subsets: ["latin"] });
@@ -31,7 +30,6 @@ function LinkItem({
   const active = path === href;
   return (
     <Link
-      as={NextLink}
       p={2}
       bg={active ? "gray.200" : undefined}
       color={useColorModeValue(
@@ -94,22 +92,37 @@ export default function Navbar() {
           </LinkItem>
         </Stack> */}
         <Spacer />
-        <Button
-          as={Link}
-          href="/resume.pdf"
-          variant="link"
-          p={[1, 4]}
-          fontSize={"md"}
-          fontWeight="bold"
-          letterSpacing={"tighter"}
-          textUnderlineOffset={4}
-          color={useColorModeValue("gray.800", "white")}
-          transition={"all 0.2s ease"}
-          _hover={{ color: useColorModeValue("gray.600", "gray.400") }}
-        >
-          Résumé
-        </Button>
-        <ThemeButton />
+        <Flex gap={4}>
+          <Button
+            as={Link}
+            href="/work"
+            variant="link"
+            fontSize={"md"}
+            fontWeight="bold"
+            letterSpacing={"tighter"}
+            textUnderlineOffset={4}
+            color={useColorModeValue("gray.800", "white")}
+            transition={"all 0.2s ease"}
+            _hover={{ color: useColorModeValue("gray.600", "gray.400") }}
+          >
+            Work
+          </Button>
+          <Button
+            as={Link}
+            href="/resume.pdf"
+            variant="link"
+            fontSize={"md"}
+            fontWeight="bold"
+            letterSpacing={"tighter"}
+            textUnderlineOffset={4}
+            color={useColorModeValue("gray.800", "white")}
+            transition={"all 0.2s ease"}
+            _hover={{ color: useColorModeValue("gray.600", "gray.400") }}
+          >
+            Résumé
+          </Button>
+          <ThemeButton />
+        </Flex>
       </Container>
     </Box>
   );

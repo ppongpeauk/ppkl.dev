@@ -6,6 +6,7 @@ import {
   Box,
   Button,
   Container,
+  Flex,
   Heading,
   Link,
   Spinner,
@@ -96,12 +97,10 @@ export default function Page() {
             </Section>
             <Box maxW="container.sm" margin="auto">
               <Section delay={0.2}>
-                <Container maxW="container.md">
+                <Box maxW="container.md">
                   <Heading
                     as="h3"
                     fontSize="2xl"
-                    mt={2}
-                    mb={2}
                     variant="section-title"
                   >
                     About
@@ -111,47 +110,45 @@ export default function Page() {
                     Washington, DC. He is currently studying Computer Science at
                     George Mason University in Fairfax, Virginia.
                   </Paragraph>
-                </Container>
+                </Box>
               </Section>
               <Section delay={0.3}>
-                <Container maxW="container.md">
+                <Box maxW="container.md">
                   <Heading
                     as="h3"
                     fontSize="2xl"
-                    mt={2}
-                    mb={2}
                     variant="section-title"
                   >
                     On The Web
                   </Heading>
-                  <Box gap={4}>
-                    <Link href="https://github.com/ppongpeauk" isExternal>
+                  <Flex flexDir={'column'} gap={0}>
+                    <Link href="https://github.com/ppongpeauk" isExternal w={'fit-content'}>
                       <Button size={"md"} variant="ghost" leftIcon={<IoLogoGithub />}>
                         GitHub
                       </Button>
                     </Link>
-                    <Link href="https://linkedin.com/in/pete-pongpeauk" isExternal>
+                    <Link href="https://linkedin.com/in/pete-pongpeauk" isExternal w={'fit-content'}>
                       <Button size={"md"} variant="ghost" leftIcon={<IoLogoLinkedin />}>
                         LinkedIn
                       </Button>
                     </Link>
-                    <Link href="https://twitter.com/restrafes" isExternal>
+                    <Link href="https://twitter.com/restrafes" isExternal w={'fit-content'}>
                       <Button size={"md"} variant="ghost" leftIcon={<IoLogoTwitter />}>
                         Twitter
                       </Button>
                     </Link>
-                    <Link href="https://instagram.com/pete.pkl" isExternal>
+                    <Link href="https://instagram.com/pete.pkl" isExternal w={'fit-content'}>
                       <Button size={"md"} variant="ghost" leftIcon={<IoLogoInstagram />}>
                         Instagram
                       </Button>
                     </Link>
-                    <Link href="/Pete Pongpeauk (2BBF9BAE) – Public.asc" isExternal>
+                    <Link href="/Pete Pongpeauk (2BBF9BAE) – Public.asc" isExternal w={'fit-content'}>
                       <Button size={"md"} variant="ghost" leftIcon={<FaKey />}>
                         Public Key
                       </Button>
                     </Link>
-                  </Box>
-                </Container>
+                  </Flex>
+                </Box>
               </Section>
             </Box>
           </Suspense>
