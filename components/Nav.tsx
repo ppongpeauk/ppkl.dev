@@ -93,7 +93,7 @@ export default function Navbar() {
         </Stack> */}
         <Spacer />
         <Flex gap={4}>
-          <Button
+          {/* <Button
             as={Link}
             href="/work"
             variant="link"
@@ -106,7 +106,7 @@ export default function Navbar() {
             _hover={{ color: useColorModeValue("gray.600", "gray.400") }}
           >
             Work
-          </Button>
+          </Button> */}
           <Button
             as={Link}
             href="/resume.pdf"
